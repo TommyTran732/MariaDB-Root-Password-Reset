@@ -1,2 +1,2 @@
 # MariaDB-Root-Password-Reset
-Simple Scripts to reset your MariaDB root password.
+Simple scripts to reset your MariaDB root password.
