@@ -13,7 +13,7 @@ mariadb_root_reset(){
     SQL="${Q1}${Q2}${Q3}"
     mysql mysql -e "$SQL"
     pkill mysqld
-    service mariadb restart
+    service mysqld restart
     output "Your MariaDB root password is $rootpassword"
 }
 
