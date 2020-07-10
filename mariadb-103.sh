@@ -3,7 +3,7 @@ output(){
 }
 
 mariadb_root_reset(){
-    service mariadb stop
+    service mysqld stop
     mysqld_safe --skip-grant-tables >res 2>&1 &
     sleep 5
     rootpassword=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
